@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ALL-CONTENT */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 1;
+    grid-row: 1 / -1;
+    gap: 6vh;
+    padding: 1vw;
+    background-color: rgb(17, 146, 185);
+    
+    color: white;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 25px;
+}
+
+.sidebar button {
+    all: unset;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    gap: 25px;
+}
+
+.sidebar .svg {
+    height: 25px;
+    filter: invert(1);
+}
+
+.dash {
+    height: 50px;
+    filter: invert(1);
+}
+
+.middle-side,
+.bottom-side {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+/* NAVIGATION */
+
+.navigation {
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.searchbar {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    align-self: center;
+}
+
+.user-info {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+
+.user-introduction {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+}
+
+.create-buttons {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.navigation .svg {
+    height: 30px;
+}
+
+
+/* DISPLAY */
+
+
